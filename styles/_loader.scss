@@ -1,0 +1,27 @@
+/* From Uiverse.io by Yaya12085 */
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    animation: spin 1s linear infinite;
+    stroke: rgb(13, 252, 0);
+}
+
+.loading-text {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 500;
+    color: rgb(13, 252, 0);
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
