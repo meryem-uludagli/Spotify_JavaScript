@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-/* From Uiverse.io by Yaya12085 */
 .loader {
   display: flex;
   align-items: center;
@@ -168,12 +167,29 @@ main section .list {
   flex-direction: column;
   gap: 10px;
   height: 100%;
+  max-height: 300px;
+  overflow: hidden;
+}
+.card .card img {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
 }
 .card .card-info {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-grow: 1;
+  height: 100%;
+}
+.card .card-info h3,
+.card .card-info h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card:hover .play {
   bottom: 20px;
